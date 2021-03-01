@@ -18,6 +18,10 @@ const addInstrument = () => {
     for (i=0;i<8;i++){
         var newPatternSqr = document.createElement("button"); 
         newPatternSqr.classList="patternSqr";
+        newPatternSqr.innerHTML=i+1;
+        newPatternSqr.onclick =function(){buttonStatus(this)}
+    
+
         newPatternDiv.appendChild(newPatternSqr);
     }
 
