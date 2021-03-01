@@ -1,0 +1,53 @@
+#logo-section{
+    display:flex;
+    justify-content: center;
+    font-family: 'Akaya Kanadaka', solid;
+    font-size:3em;
+    
+}
+#navi-table{
+    margin-top:1%;
+    margin-bottom:1%;
+    display:flex;
+    justify-content: center;
+}
+
+#pattern{
+    margin-left:auto;
+    margin-right:auto;
+    width:75vw;
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    background-color:rgb(233, 162, 162);
+}
+.instrument{
+    font-family: 'Akaya Kanadaka',solid;
+    font-size:1em;
+    margin-right:0.5em;
+    background-color:indianred;
+    border-style:solid;
+    border-radius:2%;
+    border-color:black;
+    width:10%;
+}
+.patternSqr{
+    width:5%;
+    height:auto;
+    background-color:grey;
+    border-style:solid;
+    border-radius:2%;
+    padding:1%;
+    border-color:rgb(255, 255, 255);
+}
+
+#addInstrumentSection{
+display:flex;
+justify-content: center;
+}
+#addInstrumentButton{
+    margin-top:1%;
+    width:30vw;
+    height:2%;
+    border-radius:2%; 
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/mobile-style.css" type="text/css" >
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
+    <title>Urp Mobile App</title>
+    <script src="drumPattern.js"></script>
+</head>
+
+<body>
+    <div id="logo-section">DrumPattern</div>
+    <div id="navi-table">
+        <table>
+            <tr> <button> 8</button></tr>
+            <tr> <button>16</button></tr>
+        </table>
+    </div>
+   
+    <div id="pattern">
+        <div class="instrument">Kick</div>
+        <button class="patternSqr" onclick="buttonStatus(this)">1</button>
+        <button class="patternSqr" onclick="buttonStatus(this)">2</button>
+        <button class="patternSqr" onclick="buttonStatus(this)">3</button>
+        <button class="patternSqr" onclick="buttonStatus(this)">4</button>
+        <button class="patternSqr" onclick="buttonStatus(this)">5</button>
+        <button class="patternSqr" onclick="buttonStatus(this)">6</button>
+        <button class="patternSqr" onclick="buttonStatus(this)">7</button>
+        <button class="patternSqr" onclick="buttonStatus(this)">8</button>
+    </div>
+    <div id="addInstrumentSection">
+    <button  id="addInstrumentButton" onclick="addInstrument()">+</button>
+    </div>
+
+        
+    
+</body>
+
+</html>
