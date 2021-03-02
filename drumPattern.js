@@ -6,13 +6,17 @@ const buttonStatus = (status) => {
 };
 
 const addInstrument = () => {
-
     // new pattern div
     var newPatternDiv = document.createElement("div");
     newPatternDiv.classList="pattern";
     // new instrument button 
-    var newInstrumentButton = document.createElement("button"); //declare
+    var newInstrumentButton = document.createElement("select"); //declare
     newInstrumentButton.classList="instrument"; // give class name
+    newInstrumentButton.name="instrumentChoice";
+    
+    var newOption = document.createElement("option");      // give new options to instrument select
+    newOption.innerHTML="Kick";                             // EXCHANGE WITH LOOPING THROUGH AN ARRAY
+    newInstrumentButton.appendChild(newOption);
     newPatternDiv.appendChild(newInstrumentButton); // append to mother div
     // new pattern squares
     for (i=0;i<8;i++){
@@ -20,8 +24,6 @@ const addInstrument = () => {
         newPatternSqr.classList="patternSqr";
         newPatternSqr.innerHTML=i+1;
         newPatternSqr.onclick =function(){buttonStatus(this)}
-    
-
         newPatternDiv.appendChild(newPatternSqr);
     }
 

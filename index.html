@@ -22,7 +22,12 @@
     </div>
    <div id="patternTable">
     <div class="pattern">
-        <button class="instrument">Kick</button>
+        <select name="instrumentChoice" class="instrument">
+          <option >Kick</option>
+          <option value="snare">Snare</option>
+          <option value="hihat">HiHat</option>
+          <option value="crash">Crash</option>
+        </select>
         <button class="patternSqr" onclick="buttonStatus(this)">1</button>
         <button class="patternSqr" onclick="buttonStatus(this)">2</button>
         <button class="patternSqr" onclick="buttonStatus(this)">3</button>
@@ -31,7 +36,7 @@
         <button class="patternSqr" onclick="buttonStatus(this)">6</button>
         <button class="patternSqr" onclick="buttonStatus(this)">7</button>
         <button class="patternSqr" onclick="buttonStatus(this)">8</button>
-    </div>
+    </div>  
     <div id="addInstrumentSection">
     <button  id="addInstrumentButton" onclick="addInstrument()">+</button>
     </div>
