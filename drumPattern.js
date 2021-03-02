@@ -5,7 +5,15 @@ const buttonStatus = (status) => {
     else return status.style.backgroundColor="white";
 };
 
+
 const addInstrument = () => {
+    const InstrumentSet=[
+        "kick",
+        "Snare",
+        "HiHat",
+        "Crash"
+    ]
+    
     // new pattern div
     var newPatternDiv = document.createElement("div");
     newPatternDiv.classList="pattern";
@@ -13,10 +21,11 @@ const addInstrument = () => {
     var newInstrumentButton = document.createElement("select"); //declare
     newInstrumentButton.classList="instrument"; // give class name
     newInstrumentButton.name="instrumentChoice";
-    
+    for (i=0;i<InstrumentSet.length;i++){
     var newOption = document.createElement("option");      // give new options to instrument select
-    newOption.innerHTML="Kick";                             // EXCHANGE WITH LOOPING THROUGH AN ARRAY
+    newOption.innerHTML=InstrumentSet[i];                             // EXCHANGE WITH LOOPING THROUGH AN ARRAY
     newInstrumentButton.appendChild(newOption);
+    }
     newPatternDiv.appendChild(newInstrumentButton); // append to mother div
     // new pattern squares
     for (i=0;i<8;i++){

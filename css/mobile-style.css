@@ -19,7 +19,7 @@
     display:flex;
     justify-content: center;
     text-align: center;
-    background-color:rgb(233, 162, 162);
+    background-color:#e9a2a263;
 }
 .instrument{
     font-family: 'Akaya Kanadaka',solid;
@@ -29,7 +29,7 @@
     border-style:solid;
     border-radius:2%;
     border-color:black;
-    width:10%;
+    width:20%;
 }
 .patternSqr{
     width:5%;
@@ -38,7 +38,7 @@
     border-style:solid;
     border-radius:2%;
     padding:1%;
-    border-color:rgb(255, 255, 255);
+    border-color:hsla(332, 61%, 61%, 0.659);
 }
 
 #addInstrumentSection{
