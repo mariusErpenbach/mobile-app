@@ -5,45 +5,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/mobile-style.css" type="text/css" >
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
-    <title>Urp Mobile App</title>
-    <script src="drumPattern.js"></script>
+    <link rel="stylesheet" href="./css/mobile-index-style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
+    <title>DrumPatternMashine</title>
 </head>
 
 <body>
-    <div id="logo-section">DrumPattern</div>
-    <div id="navi-table">
-        <table>
-            <tr> <button> 8</button></tr>
-            <tr> <button>16</button></tr>
-        </table>
-    </div>
-   <div id="patternTable">
-    <div class="pattern">
-        <select name="instrumentChoice" class="instrument">
-          <option >Kick</option>
-          <option value="snare">Snare</option>
-          <option value="hihat">HiHat</option>
-          <option value="crash">Crash</option>
-        </select>
-        <button class="patternSqr" onclick="buttonStatus(this)">1</button>
-        <button class="patternSqr" onclick="buttonStatus(this)">2</button>
-        <button class="patternSqr" onclick="buttonStatus(this)">3</button>
-        <button class="patternSqr" onclick="buttonStatus(this)">4</button>
-        <button class="patternSqr" onclick="buttonStatus(this)">5</button>
-        <button class="patternSqr" onclick="buttonStatus(this)">6</button>
-        <button class="patternSqr" onclick="buttonStatus(this)">7</button>
-        <button class="patternSqr" onclick="buttonStatus(this)">8</button>
-    </div>  
-    <div id="addInstrumentSection">
-    <button  id="addInstrumentButton" onclick="addInstrument()">+</button>
-    </div>
-</div>
+    <nav>
+        <section id="startSection">
+        <section><p>New Pattern</p></section>
+        <section><p>Load Pattern</p></section>
+        <section><p>Quick Start</p>
+            <form id="quickStart">
+        <input type="radio" name="eightBarsRadio"/><label for="eightBarsRadio">8</label>
+        <input type="radio"name="sixteenBarsRadio"/>
+        <input type="int" name="bpmQuick"/><label for="bpmQuick">BPM</label>
+            </form>
+        </section>
+        </section>
+        <section id="logoSection">
+            <h1>Urpro</h1>
+        </section>
+        <section id="infoSection">
+            <section>How-To</section>
+            <section>About</section>
+        </section>
 
-        
-    
+    </nav>
+    <main>
+        <section id="drumMashineAdd">
+            <section></section>
+            <section></section>
+            <section></section>
+        </section>
+        <section id="BlogSection"></section>
+        <section id="loginSection">
+            <section></section>
+            <section></section>
+        </section>
+    </main>
+    <footer>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+    </footer>
 </body>
 
 </html>
