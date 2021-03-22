@@ -1,14 +1,66 @@
 body{background-color:grey}
 
-nav{
+nav{    /*FIRST SECTION*/
     height:10vh;
     border-style:dotted;
     border-color:white;
     display:flex;
     flex-direction: row;
 }
+#startSection{
+    color:white;
+    display:flex;
+}
+#startSection > section{
+    height:100%;
+    width:33%;
+    border-style:dotted;
+    border-color:red;
+    display:flex;
+}
+#startSection > section > button{
+color:brown;
+width:100%;
+height:100%;
+}
+#startSection > section:hover button{
+    background-color:rgb(95, 91, 91);
+    color:white;
+}
 
-main{
+#logoSection{
+    display:flex;
+    justify-content:center;
+    height:auto;
+    background-color:rgb(95, 91, 91);
+    }
+    #logoSection h1{
+        margin-top:0;
+        font-size:2em;
+        color:white;
+        font-family: 'Akaya Kanadaka', solid;
+    }
+    
+#infoSection{
+        display:flex;
+        flex-direction:row;
+    }
+    #infoSection > section {
+        width:50%;
+        border-color:teal;
+        border-style:dotted;
+    }
+    #infoSection > section > button {
+        height:100%;
+        width:100%;
+    }
+    #infoSection > section:hover button{
+        background-color:rgb(95, 91, 91);
+        color:white;
+    }
+
+    
+main{       /*SECOND SECTION*/
     height:80vh;
     border-style:dotted;
     border-color:yellowgreen;
@@ -16,7 +68,7 @@ main{
     flex-direction: row;
 }
 
-footer{
+footer{ /*THIRD SECTION*/
     height:4vh;
     border-style:dotted;
     border-color:turquoise;
@@ -38,21 +90,12 @@ main > section{
 #infoSection{
     display:flex;
     flex-direction:row;
+    
 }
 #infoSection > section {
     width:50%;
     border-color:teal;
     border-style:dotted;
-}
-#startSection{
-    color:white;
-    display:flex;
-}
-#startSection > section{
-    height:100%;
-    width:33%;
-    border-style:dotted;
-    border-color:red;
 }
 
 #drumMashineAdd{
@@ -80,15 +123,4 @@ footer > section{
     width:20%;
     border-style:dotted;
     border-color:wheat;
-}
-#logoSection{
-display:flex;
-justify-content:center;
-background-color:rgb(95, 91, 91);
-}
-#logoSection h1{
-    margin-top:-6%;
-    color:white;
-    font-size:15vh;
-    font-family: 'Akaya Kanadaka', solid;
 }
