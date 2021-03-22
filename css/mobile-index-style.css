@@ -19,15 +19,50 @@ nav{    /*FIRST SECTION*/
     display:flex;
 }
 #startSection > section > button{
+position:relative;
 color:brown;
 width:100%;
 height:100%;
+}
+#startSection > section > button > p{
+    margin-top:-10%;
 }
 #startSection > section:hover button{
     background-color:rgb(95, 91, 91);
     color:white;
 }
 
+#quickStartSection{
+    display:flex;
+}
+#quickStartButton > p {
+    position:relative;
+    top:15%;
+    margin-bottom:15%;
+}
+.fa-angle-double-down{
+    position:relative;
+    top:0;
+}
+#quickStartDropDown{visibility:hidden}
+#quickStartButton:hover + #quickStartDropDown{
+    visibility:visible;
+    position:absolute;
+    display:flex;
+    background-color:black;
+    width:auto;
+    height:auto;
+    margin-top:5vw;
+}
+#quickStartDropDown:hover{
+    visibility:visible;
+    position:absolute;
+    display:flex;
+    background-color:black;
+    width:auto;
+    height:auto;
+    margin-top:5vw;
+}
 #logoSection{
     display:flex;
     justify-content:center;

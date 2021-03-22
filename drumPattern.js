@@ -35,7 +35,6 @@ const addInstrument = () => {
         newPatternSqr.onclick =function(){buttonStatus(this)}
         newPatternDiv.appendChild(newPatternSqr);
     }
-
     console.log(newPatternDiv)
 //   document.patternTable.appendChild(newPatternDiv)
    var currentDiv = document.getElementById("patternTable");

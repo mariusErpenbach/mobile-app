@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/mobile-index-style.css" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/058434cd7c.js" crossorigin="anonymous"></script>
     <title>DrumPatternMashine</title>
 </head>
 
@@ -15,7 +16,17 @@
         <section id="startSection">
         <section><button id="newPatternButton"><p>New Pattern</p></button></section>
         <section><button id="loadPatternButton"><p>Load Pattern</p></button></section>
-        <section><button id="quickStartButton"><p>Quick Start</p></button></section>
+        <section id="quickStartSection"><button id="quickStartButton"><p>Quick Start</p><i class="fas fa-angle-double-down"></i></button>  <div id="quickStartDropDown">
+            <form>
+                <select name="PatternLength" id="patternLengthSelect">
+                    <option>8</option>
+                    <option>16</option>
+                </select>
+                <input type="int"/>
+            </form>
+        </div>  </section>
+      
+    
         </section>
         <section id="logoSection">
             <h1>Urpro</h1>
