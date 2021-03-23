@@ -16,16 +16,20 @@
         <section id="startSection">
         <section><button id="newPatternButton"><p>New Pattern</p></button></section>
         <section><button id="loadPatternButton"><p>Load Pattern</p></button></section>
-        <section id="quickStartSection"><button id="quickStartButton"><p>Quick Start</p><i class="fas fa-angle-double-down"></i></button>  <div id="quickStartDropDown">
-            <form>
-                <select name="PatternLength" id="patternLengthSelect">
+        <section id="quickStartSection"><button id="quickStartButton"><p>Quick Start<i class="fas fa-angle-double-down"></i></p></button>  </section>
+        <div id="quickStartDropDown">
+            <form id="quickForm">
+                <div id="patternLengthSelect">
+                <select name="PatternLength">
                     <option>8</option>
                     <option>16</option>
                 </select>
-                <input type="int"/>
+            </div>
+                <div>
+                <input type="int"id="bpmInput"><label for="bpmInput"> -&nbspBPM</label></div>
+                <button type="submit" onClick="alert('something cool should happen...later')">Submit</button>
             </form>
-        </div>  </section>
-      
+        </div> 
     
         </section>
         <section id="logoSection">
@@ -34,6 +38,12 @@
         <section id="infoSection">
             <section><button>How-To</button></section>
             <section><button>About</button></section>
+        </section>
+        <section id="loginSection">
+            <form>
+                <input type="text"placeholder="userName">
+                <input type="text"placeholder="password">
+            </form>
         </section>
 
     </nav>
