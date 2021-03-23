@@ -1,0 +1,43 @@
+nav{                                    /*FIRSTNAV*/
+    display:flex;
+    flex-direction:row;
+    border-style:dotted;
+    border-color:brown;
+}
+nav > section {     
+    display:flex;
+    border-style:dotted;
+    border-color:black;
+}
+#startSection >section >button  {
+    height:100%;
+}
+#quickStartDropDown{
+    opacity:0;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+#quickStartSection:hover + #quickStartDropDown{
+    opacity:1;
+}
+#quickStartDropDown:hover{
+    opacity:1;
+}
+
+#logoSection{       /*URPRO LOGO HEADER*/
+    margin-right: auto;
+    margin-left:auto;
+    font-family: 'Akaya Kanadaka', solid;
+}
+#infoSection{
+    margin-left:auto;
+}
+#infoSection > section >button{
+    height:100%;
+}
+#loginSection > form{
+    display:flex;
+    flex-direction:column;  
+}
